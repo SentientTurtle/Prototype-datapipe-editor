@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  color: black;
+  background: #e1e1e1;
+}
+
+.progress-inner-animate {
+    width: 25%;
+    animation: 3s progress-slide linear infinite;
+}
+
+@keyframes progress-slide {
+    from {
+        transform: translateX(0%);
+    }
+
+    50% {
+        transform: translateX(300%);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+}
+
+.resize-height-zero {
+    height: 0 !important; /* Stops misbehaviour with CSS resize neighbours */
+}
+
+.resize-width-zero {
+    width: 0 !important; /* Stops misbehaviour with CSS resize neighbours */
+}
+
+.react-flow .react-flow__handle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 5ch;
+    padding: 0.25rem;
+    height: 1.5rem;
+    border-radius: 0;
+    border: none;
+    color: white;
+}
+.react-flow .react-flow__handle-right {
+    right: 0;
+    border-top-left-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+}
+
+.react-flow .react-flow__handle-left {
+    left: 0;
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+}
+
+path.react-flow__edge-path {
+    stroke-width: 2px;
+}
+
+path.react-flow__connection-path {
+    stroke-width: 2px;
+}
