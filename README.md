@@ -1,6 +1,6 @@
 ## A unfinished web 'mashup' data pipeline editor
 
-This was made as a small proof of concept to evaluate ReactFlow. 
+This was made as a small proof of concept to evaluate React Flow. 
 
 It is not complete or suitable for production use.
 
